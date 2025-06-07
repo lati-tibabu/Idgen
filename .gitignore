@@ -3,6 +3,11 @@
 /storage/idbar2023/*
 /storage/idqr2023/*
 
+# But keep the folders (using a placeholder)
+!/storage/id2023/.gitkeep
+!/storage/idbar2023/.gitkeep
+!/storage/idqr2023/.gitkeep
+
 # Composer dependencies
 /vendor/
 composer.lock
