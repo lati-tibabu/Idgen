@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Gen</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <script src="https://kit.fontawesome.com/cfee536f6f.js" crossorigin="anonymous" defer></script>
+    <div class="main-container">
+        <div class="large-text">
+            ID GEN
+        </div>
+        <div class="back" onclick="back()">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="sub-container">
+            <div class="form-info">
+                <p>Please fill the following form to get your id</p>
+            </div>
+            <form action="control/getin.php" method="post">
+
+                <div class="form-field">
+                    <label for="id_no">ID Number</label>
+                    <input type="text" name="id_no" id="id_no" placeholder="UGR/00000/00" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="passkey">ID Passkey</label>
+                    <input type="password" name="passkey" id="passkey" placeholder="passkey" required>
+                </div>
+
+                <div class="form-field">
+                    <input type="submit" Value="Get your ID">
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script>
+        function back() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>

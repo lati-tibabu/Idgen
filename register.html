@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Gen</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <script src="https://kit.fontawesome.com/cfee536f6f.js" crossorigin="anonymous" defer></script>
+    <script src="js/app.js" defer></script>
+    <div class="main-container">
+        <div class="large-text">
+            <a href="index.html">
+                <i class="fa-solid fa-home"></i>
+            </a>
+            ID GEN
+        </div>
+        <div class="back" onclick="back()">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="sub-container">
+            <div class="form-info">
+                <p>Please fill the following form to generate your id</p>
+            </div>
+            <form action="control/register.php" method="post" enctype="multipart/form-data">
+
+                <div class="form-field">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="First Middle Last" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="first@example.com" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="id_no">ID Number</label>
+                    <input type="text" name="id_no" id="id_no" placeholder="UGR/00000/00" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender" required>
+                        <option value="">Choose</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="e_year">Entry Year</label>
+                    <input type="text" name="e_year" id="e_year" placeholder="202X/201X" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="department">Department</label>
+                    <input type="text" name="department" id="department"
+                        placeholder="Computer Science and Engineering(BSc Degree)" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="image">Photo</label>
+                    <input type="file" name="image" id="image" accept="image/*" onclick="choose_avatar()" required>
+                </div>
+
+                <div class="form-field avatar-choose">
+                    <img src="storage/id2023/unknown_avatar.jpg" alt="avatar_name" id="avatar_image">
+                    <img src="" alt="" id="avatar_image2">
+                </div>
+
+                <div class="form-field">
+                    <!-- <label for="name">Name</label> -->
+                    <input type="submit" Value="Register your ID">
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script defer>
+
+        function back() {
+            ugr / 22626 / 13
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+# Ignore all contents inside these storage folders
+/storage/id2023/*
+/storage/idbar2023/*
+/storage/idqr2023/*
+
+# Composer dependencies
+/vendor/
+composer.lock
+
+# PHPStorm / JetBrains IDE
+/.idea/
+
+# VSCode
+.vscode/
+
+# Node modules (if using frontend tooling)
+node_modules/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Cache and logs
+/cache/
+/tmp/
+/logs/
+/*.log
+
+# PHPUnit test results
+/phpunit.xml
+/phpunit.result.cache
+
+# Coverage reports
+/coverage/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Backup or hidden files
+*.bak
+*.swp
+*.swo
+*.tmp
+*.orig
+
+# Uploads and user-generated content (if applicable)
+/storage/
+/uploads/
+/public/uploads/
+
+# Build artifacts (if you use a build tool)
+/dist/
+/build/
